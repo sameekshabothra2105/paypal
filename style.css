@@ -1,0 +1,290 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" ,Arial, sans-serif;
+    background-color: #f2f2f2; /* Optional: Set the background color of the page */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 210mm; /* Set the width to A4 size in millimeters */
+    height: 297mm; /* Set the height to A4 size in millimeters */
+    margin: 0 auto; /* Add margin to the top of the container */
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add space between lines and text */
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+
+
+.pay {
+    font-size: 53px;
+    font-weight: bold; /* Make the text bold for better visibility */
+    color: #004AAD; /* Dark blue color for "Pay" */
+
+}
+
+.pal {
+    font-size: 53px;
+    font-weight: bold; /* Make the text bold for better visibility */
+    color: #64b5f6; /* Light blue color for "Pal" */
+}
+
+.customer-support {
+    font-size: 21px;
+    color: black; /* Black color for "Customer Support" */
+    margin-top: 10px; /* Add some space between "PayPal" and "Customer Support" */
+    font-weight: bolder;
+}
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+.divider {
+    width: 70%; /* Adjust the length of the line as needed */
+    height: 2px;
+    background-color: #272626; /* Grey color for the horizontal line */
+    margin: 20px 0; /* Add margin above and below the horizontal line */
+}
+
+.sections {
+    display: flex;
+    width: 70%; /* Adjust the width of the sections as needed */
+    justify-content: space-between;
+    margin-top: 10px; /* Add space between the sections and the table */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Adjust the width of each section as needed */
+    text-align: left;
+    padding: 10px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Adjust the width of each section as needed */
+    text-align: right;
+    padding: 10px;
+}
+.left-divider {
+    margin-left:0px; /* Add margin to the left of the right-divider */
+    border: none;
+    height: 4px; /* Adjust the height as needed (e.g., 5px for a 5-pixel height) */
+    background-color: #100f0f; /* Change the color of the divider */
+    width: 20px;
+}
+
+.right-divider {
+    margin-right:0px; /* Add margin to the left of the right-divider */
+    border: none;
+    height: 4px; /* Adjust the height as needed (e.g., 5px for a 5-pixel height) */
+    background-color: #100f0f; /* Change the color of the divider */
+    width: 20px;
+}
+
+.invoice-header {
+    font-size: 13px;
+}
+.lower{
+    font-size: 14.5px; 
+}
+
+.dear-customer {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.total-header {
+    font-size: 13px;
+}
+
+.usd {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.transaction-table {
+    width: 70%; /* Adjust the table width as needed */
+    border-collapse: collapse;
+    margin-top: 20px; /* Add space between the table and the divider */
+    font-size:16px ;
+    
+}
+
+.transaction-table td {
+    border: 2px solid #353535; /* Add borders to table cells */
+    padding: 8px; /* Add padding to table cells */
+    text-align: center; /* Center align the content */
+}
+
+/* Add styles to remove borders for specific cells */
+.transaction-table tr:nth-child(3) td:first-child {
+    border: none;
+    padding :20px; /* Remove borders for the first cell in the third and fourth rows */
+}
+
+.transaction-message {
+    width: 70%;
+    margin-top:25px; /* Add space between the table and the transaction message */
+    text-align: left; /* Justify the text for better alignment */
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.table-header {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+    
+}
+
+.table-header td {
+    text-align: left; /* Align the text to the left side of the cell */
+}
+.total{
+    font-weight: bolder;
+    font-size: large;
+}
+.subtotal{
+    font-size: 13px;
+}
+
+.subtotal .subtotal-tax{
+    text-align: right;
+    font-size: 13px;
+}
+.subtotal .method {
+    text-align: left;
+    font-size: 16px;  
+}
+.subtotal .method .payment {
+    font-weight: bolder;
+    font-size: 20px;
+   
+}
+.Thankyou {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    width: 70%;
+  }
+  
+  .left-section {
+    text-align: left;
+    width: 80%; /* Adjust the width of the left section */
+    margin-right: 50px;
+    align-items: baseline;
+    
+  }
+
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 30%; /* Adjust the width of the right section */
+  }
+  
+  .small-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  
+  
+  .small-heading .pay {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004AAD;
+  }
+  
+  .small-heading .pal {
+    font-size: 20px;
+    font-weight: bold;
+    color: #64b5f6;
+  }
+  
+  .horizontal-line {
+    border-top: 1px solid #000;
+    width: 100%; /* Set the width of the line to fill the available space */
+    margin: 8px 0; /* Add some spacing above and below the line */
+  }
+  .admin {
+    font-style: normal;
+    font-weight:normal;
+    font-size:16px;
+  }
+  
+.rectangle-right {
+    width: 305px; /* Adjust the width of the rectangles */
+    height: 60px; /* Adjust the height of the rectangles */
+    background-color: #38B6FF; /* Dark blue color for the rectangles */
+}
+.rectangle-left{
+    width: 305px; /* Adjust the width of the rectangles */
+    height: 60px; /* Adjust the height of the rectangles */
+    background-color: #004AAD; /* Dark blue color for the rectangles */
+}
+.footer{
+    width: 550px; /* Adjust the width of the rectangles */
+    height: 50px; /* Adjust the height of the rectangles */
+    background-color: #38B6FF; 
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.circle {
+    position: absolute;
+    width: 10px; /* Adjust this width to change the size of the circles */
+    height: 10px; /* Adjust this height to change the size of the circles */
+    background-color: black; /* Change the color of the circles */
+    border-radius: 50%;
+  }
+  
+  /* Positioning the circles between the line */
+  .circle:nth-child(1) {
+    top: -3px;
+    left: 40px; /* Adjust this value to position the first circle */
+  }
+  
+  .circle:nth-child(2) {
+    top: -3px;
+    left: 80px; /* Adjust this value to position the second circle */
+  }
+  
+  .circle:nth-child(3) {
+    top: -3px;
+    left: 120px; /* Adjust this value to position the third circle */
+  }
+  
+  .circle:nth-child(4) {
+    top: -3px;
+    left: 160px; /* Adjust this value to position the fourth circle */
+  }
+
+    
+    
+    
+    
